@@ -1,0 +1,47 @@
+#map {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  color: #333333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5625;
+  margin-bottom: 15px;
+}
+
+/* A nice light color for background */
+/* .info {
+  color: #685206;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  text-align: justify;
+  text-justify: inter-word;
+} */
+
+/* A bit bigger font */
+/* .info {
+  color: #4c4a37;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 0 24px;
+} */
+
+/* A bit smaller font */
+/* .info {
+  font-family: "Inder", sans-serif;
+  line-height: 28px;
+  margin-bottom: 15px;
+  color: #666;
+} */

@@ -1,4 +1,4 @@
-{
+var geojson = {
   "type": "FeatureCollection",
   "name": "LI_BUILDING_FOOTPRINTS",
   "crs": {
