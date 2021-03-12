@@ -2,7 +2,7 @@
 
 function initMap(cnt) {
     var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 18,
+        zoom: 3.6,
         center: cnt,
         mapTypeId: "terrain",
     });
@@ -43,8 +43,8 @@ function attachPolygonInfoWindow(array, html, map) {
 function initialMap() {
 
     var map = initMap({
-        lng: -75.16660261191,
-        lat: 39.9618914644567,
+        lng: 64.16660261191,
+        lat: 41.9618914644567,
     });
 
     var arr = [];
@@ -65,7 +65,7 @@ function initialMap() {
         map.setCenter(new google.maps.LatLng(array[0].lat, array[0].lng));
         var hueNumber = arr[j];
         var polStore = drawPolygon(array, map, hueNumber);
-        var infoHtml = "<div class='info'><div>Address :" + geojson.features[j].properties.ADDRESS + "</div><div>Building Name :" + geojson.features[j].properties.BUILDING_NAME + "</div><div>" + geojson.features[j].properties.BASE_ELEVATION + "</div><div>" + geojson.features[j].properties.APPROX_HGT + "</div><div>" + geojson.features[j].properties.MAX_HGT + "</div><div>" + geojson.features[j].properties.PARCEL_ID_NUM + "</div><div>" + geojson.features[j].properties.PARCEL_ID_SOURCE + "</div><div>" + geojson.features[j].properties.Shape__Area + "</div></div>"
+        var infoHtml = "<div class='info'><div>Address :" + geojson.features[j].properties.ADDRESS + "</div><div>Building Name :" + geojson.features[j].properties.NAME + "</div><div>" + geojson.features[j].properties.SIZE + "</div><div>" + geojson.features[j].properties.HEIGHT + "</div><div>" + geojson.features[j].properties.WIDTH + "</div><div>" + geojson.features[j].properties.NUMBER + "</div><div>" + geojson.features[j].properties.BASE + "</div><div>" + geojson.features[j].properties.STATE + "</div></div>"
         attachPolygonInfoWindow(polStore, infoHtml, map);
     }
 }
